@@ -25,6 +25,11 @@ You will need the following things properly installed on your computer.
 * make sure postgres is running
 * `rake db:create`
 * `rake db:migrate`
+* create .env file and put in the following, with your own information from Github
+* CLIENT_SECRET
+* CLIENT_ID
+* GITHUB_LOGIN
+* GITHUB_PERSONAL_TOKEN
 
 
 
