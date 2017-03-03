@@ -127,61 +127,6 @@ section {
   p {
     margin-bottom: 15px;
   }
-  #project1 {
-    background: url('../img/adventures.png') no-repeat center center;
-    background-size: cover;
-  }
-  #project2 {
-    background: url('../img/codevelop.png') no-repeat center center;
-    background-size: cover;
-  }
-  #project3 {
-    background: url('../img/mattReads.png') no-repeat center center;
-    background-size: cover;
-  }
-  #project4 {
-    background: url('../img/sld.png') no-repeat center center;
-    background-size: cover;
-  }
-  #project5 {
-    background: url('../img/corgi.png') no-repeat center center;
-    background-size: cover;
-  }
-  #project6 {
-    background: url('../img/apple.png') no-repeat center center;
-    background-size: cover;
-  }
-  .info {
-    opacity: 0;
-    transition: opacity 1s ease;
-    color: #fff;
-    position: absolute;
-    left: 50%;
-    top: 15%;
-    transform: translateX(-50%);
-    h2 {
-      margin-bottom: 10px;
-    }
-  }
-  .col-md-4 {
-    position: relative;
-    padding: 0;
-    height: 400px;
-    &:hover {
-      .bg {
-        filter: brightness(20%);
-      }
-      .info {
-        opacity: 1;
-      }
-    }
-  }
-  .bg {
-    width: 100%;
-    height: 100%;
-    filter: brightness(80%);
-    transition: filter 1s ease;
-  }
 }
 
 footer {

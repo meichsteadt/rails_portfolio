@@ -1,21 +1,21 @@
 class ReposController < ApplicationController
   before_action :authenticate, except: [:index]
   def index
-
+    @repos = Repo.all
   end
 
   def new
-    @repo = Repo.new()
+    @repos = Repo.get_repos(session[:access_token])
   end
 
   def create
-    @repo = Repo.new(repo_params)
-    if @repo.save
-      flash[:notice] = "The Repo has been saved"
-      redirect_to repos_path
-    else
-      render 'new'
+    repos = params[:repos]
+    Repo.all.each {|repo| repo.destroy}
+    repos.each do |repo|
+      r = eval(repo)
+      Repo.create(name: r[:name], url: r[:url])
     end
+    redirect_to repos_path
   end
 
 private

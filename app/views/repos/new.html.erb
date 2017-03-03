@@ -1,1 +1,14 @@
-<h1>new</h1>
+<div class="container">
+  <h1>new</h1>
+    <div class="row">
+      <%= form_tag '/repos', method: 'post' do %>
+        <% @repos.each do |repo|%>
+          <div class="col-xs-2">
+            <%= check_box_tag('repos[]', {name: repo["name"], url: repo["html_url"]}) %>
+            <%= label_tag repo["name"] %>
+          </div>
+        <% end %>
+        <%= submit_tag "Submit", class: 'btn btn-default' %>
+      <% end %>
+  </div>
+</div>

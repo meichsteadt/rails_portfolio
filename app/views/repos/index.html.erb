@@ -1,0 +1,15 @@
+<section id="portfolio">
+  <h2>Cool Stuff I Made</h2>
+  <div class="row">
+    <% @repos.each do |repo| %>
+      <a href="<%= repo.url %>" target="_blank">
+        <div class="col-md-4">
+          <div class="bg" style="background: url('<%= repo.image%>')"></div>
+          <div class="info">
+            <h2><%= repo.name %></h2>
+          </div>
+        </div>
+      </a>
+    <% end %>
+  </div>
+</section>
