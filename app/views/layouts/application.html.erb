@@ -17,6 +17,7 @@
         <p>Are you me? Sign in <%= link_to 'here', user_index_path %></p>
       <% else %>
         <%= link_to "Edit Repos", new_repo_path %>
+        <%= link_to 'Log Out', "user#index" %>
       <% end %>
     </footer>
   </body>

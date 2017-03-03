@@ -50,6 +50,8 @@ group :development, :test do
   gem 'vcr'
   gem 'webmock'
   gem 'simplecov', :require => false
+  gem 'selenium-webdriver'
+  gem 'factory_girl_rails'
 end
 
 group :development do

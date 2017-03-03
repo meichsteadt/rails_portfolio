@@ -1,7 +1,12 @@
 require 'rest-client'
 class UserController < ApplicationController
   def index
-    redirect_to "https://github.com/login/oauth/authorize?&client_id=<%= ENV["CLIENT_ID"] %>"
+    if !session[:access_token]
+      redirect_to "https://github.com/login/oauth/authorize?&client_id=#{ENV["CLIENT_ID"]}"
+    else
+      log_out
+      redirect_to '/'
+    end
   end
 
   def new
@@ -18,5 +23,9 @@ class UserController < ApplicationController
       flash[:notice] = "You are not me"
       redirect_to '/'
     end
+  end
+
+  def log_out
+    session[:access_token] = nil
   end
 end

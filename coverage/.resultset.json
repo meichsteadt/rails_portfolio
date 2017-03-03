@@ -5,18 +5,12 @@
 
       ],
       "/Users/gassinbreh/GitHub/rails/portfolio/spec/features/repo_pages_spec.rb": [
-
-      ],
-      "/Users/gassinbreh/GitHub/rails/portfolio/spec/features/user_pages_spec.rb": [
-        1,
-        null,
         1,
         1,
         1,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -335,7 +329,7 @@
         1,
         1,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -375,6 +369,15 @@
         1,
         0,
         0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
         0,
         0,
         null,
@@ -386,6 +389,10 @@
         0,
         0,
         null,
+        null,
+        null,
+        1,
+        0,
         null,
         null
       ],
@@ -425,6 +432,14 @@
         null,
         null
       ],
+      "/Users/gassinbreh/GitHub/rails/portfolio/spec/factories.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/gassinbreh/GitHub/rails/portfolio/config/routes.rb": [
         1,
         null,
@@ -435,6 +450,9 @@
         null,
         1,
         null
+      ],
+      "/Users/gassinbreh/GitHub/rails/portfolio/spec/features/user_pages_spec.rb": [
+
       ],
       "/Users/gassinbreh/GitHub/rails/portfolio/spec/models/repo_spec.rb": [
         1,
@@ -452,6 +470,6 @@
         null
       ]
     },
-    "timestamp": 1488564884
+    "timestamp": 1488566214
   }
 }
