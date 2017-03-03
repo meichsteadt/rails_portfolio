@@ -1,0 +1,199 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+body {
+  font-family: 'Antic Slab';
+  padding-bottom: 40px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+h1, h2, h3, h4, {
+  font-family: fantasy;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+section {
+  padding-top: 30px;
+}
+
+.indent {
+  margin-right: 45px;
+}
+
+#navbar {
+  display: none;
+  height: 50px;
+  background-color: red;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+#hero {
+  padding-top: 0;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  .background {
+    background: url('http://4.bp.blogspot.com/-_QKTDA4H_h0/T6lQMoeqaWI/AAAAAAAAAPE/qUFnA-XzfFw/s1600/Animation+Background+Project+redo+copy.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+    position: absolute;
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    h1 {
+      font-size: 42px;
+      margin-bottom: 30px;
+    }
+    h3 {
+      font-size: 30px;
+      color: #999;
+      margin-bottom: 30px;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+    }
+    a {
+      color: #fff;
+    }
+  }
+  .links {
+    margin-top: 10px;
+  }
+}
+
+#about {
+  background-color: #f5f5f5;
+  text-align: center;
+  h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  h4 {
+    margin-top: 10px;
+  }
+  .col-md-4 {
+    height: 258px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .left {
+    float: left;
+  }
+  img {
+    border-radius: 3px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.7), -3px 3px 6px rgba(0,0,0,0.7);
+    float: right;
+    display: inline;
+    margin-left: 20px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .col-md-6 {
+    padding: 0 35px;
+  }
+}
+
+#portfolio {
+  border-top: 2px solid #333;
+  text-align: center;
+  overflow: hidden;
+  h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+  #project1 {
+    background: url('../img/adventures.png') no-repeat center center;
+    background-size: cover;
+  }
+  #project2 {
+    background: url('../img/codevelop.png') no-repeat center center;
+    background-size: cover;
+  }
+  #project3 {
+    background: url('../img/mattReads.png') no-repeat center center;
+    background-size: cover;
+  }
+  #project4 {
+    background: url('../img/sld.png') no-repeat center center;
+    background-size: cover;
+  }
+  #project5 {
+    background: url('../img/corgi.png') no-repeat center center;
+    background-size: cover;
+  }
+  #project6 {
+    background: url('../img/apple.png') no-repeat center center;
+    background-size: cover;
+  }
+  .info {
+    opacity: 0;
+    transition: opacity 1s ease;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+  .col-md-4 {
+    position: relative;
+    padding: 0;
+    height: 400px;
+    &:hover {
+      .bg {
+        filter: brightness(20%);
+      }
+      .info {
+        opacity: 1;
+      }
+    }
+  }
+  .bg {
+    width: 100%;
+    height: 100%;
+    filter: brightness(80%);
+    transition: filter 1s ease;
+  }
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  p {
+    margin-top: 10px;
+  }
+}
