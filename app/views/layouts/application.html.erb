@@ -13,7 +13,9 @@
     <%= yield %>
     <footer>
       <p>&copy; 2017</p>
+      <% if !session[:access_token] %>
       <p>Are you me? Sign in <a href="https://github.com/login/oauth/authorize?&client_id=<%= ENV["CLIENT_ID"] %>">here</a></p>
+      <% end %>
     </footer>
   </body>
 </html>
