@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/gassinbreh/GitHub/rails/portfolio/spec/features/landing_pages_spec.rb": [
+      "/Users/gassinbreh/GitHub/rails/portfolio/spec/features/about_pages_spec.rb": [
         1,
         null,
         1,
@@ -447,6 +447,16 @@
         1,
         null
       ],
+      "/Users/gassinbreh/GitHub/rails/portfolio/spec/features/landing_pages_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/gassinbreh/GitHub/rails/portfolio/spec/features/repo_pages_spec.rb": [
         1,
         1,
@@ -476,6 +486,6 @@
         null
       ]
     },
-    "timestamp": 1488566697
+    "timestamp": 1488566848
   }
 }
