@@ -14,7 +14,9 @@
     <footer>
       <p>&copy; 2017</p>
       <% if !session[:access_token] %>
-      <p>Are you me? Sign in <a href="https://github.com/login/oauth/authorize?&client_id=<%= ENV["CLIENT_ID"] %>">here</a></p>
+        <p>Are you me? Sign in <%= link_to 'here', user_index_path %></p>
+      <% else %>
+        <%= link_to "Edit Repos", new_repo_path %>
       <% end %>
     </footer>
   </body>

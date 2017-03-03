@@ -55,3 +55,15 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 end
+
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/cassettes'
+  c.hook_into :webmock
+  c.configure_rspec_metadata!
+  c.filter_sensitive_data('<github client secret>') { ENV['CLIENT_SECRET'] }
+  c.filter_sensitive_data('<github client id>') { ENV['CLIENT_ID'] }
+  c.filter_sensitive_data('<github login info>') { ENV['GITHUB_LOGIN'] }
+  c.filter_sensitive_data('<github password>') { ENV['GITHUB_PASSWORD'] }
+  c.filter_sensitive_data('<github personal access token>') { ENV['GITHUB_PERSONAL_TOKEN'] }
+end

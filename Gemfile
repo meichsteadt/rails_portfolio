@@ -47,6 +47,9 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'rest-client'
   gem 'dotenv-rails'
+  gem 'vcr'
+  gem 'webmock'
+  gem 'simplecov', :require => false
 end
 
 group :development do
